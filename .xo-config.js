@@ -1,4 +1,5 @@
 module.exports = {
+  nodeVersion: ">=18",
   prettier: true,
   space: true,
   globals: [
