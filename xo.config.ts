@@ -1,0 +1,42 @@
+import type { FlatXoConfig } from "xo";
+
+const xoConfig: FlatXoConfig = [
+  {
+    ignores: ["vite.config.ts"],
+  },
+  {
+    prettier: true,
+    space: true,
+    rules: {
+      "@typescript-eslint/ban-types": "off",
+      "@typescript-eslint/consistent-type-assertions": "off",
+      "@typescript-eslint/consistent-type-imports": "off",
+      "@typescript-eslint/naming-convention": "off",
+      "@typescript-eslint/no-loop-func": "off",
+      "@typescript-eslint/no-restricted-types": "off",
+      "@typescript-eslint/no-unsafe-argument": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+      "@typescript-eslint/prefer-nullish-coalescing": "off",
+      "@typescript-eslint/prefer-reduce-type-parameter": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/triple-slash-reference": "off",
+      "import-x/extensions": ["error", "never"],
+      "n/file-extension-in-import": "off",
+      "unicorn/no-array-reduce": "off",
+      "unicorn/no-null": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/prevent-abbreviations": [
+        "error",
+        {
+          allowList: {
+            dst: true,
+          },
+        },
+      ],
+    },
+  },
+];
+
+export default xoConfig;

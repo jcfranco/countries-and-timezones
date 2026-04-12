@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.9.0] - 2026-04-12
+
+### Changed
+
+- Updated with 2026a IANA Time Zone Database.
+- Added `Heard Island and McDonald Islands` country ([#155](https://github.com/manuelmhtr/countries-and-timezones/issues/155) by [Florian Veys](https://github.com/FlorianVeys))
+
 ## [3.8.0] - 2025-04-12
 
 ### Changed

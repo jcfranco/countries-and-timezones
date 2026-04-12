@@ -341,7 +341,7 @@ function deliverCountry(
   return {...other, timezones: tz};
 }
 
-const utils = {
+const utilities = {
   getCountry,
   getTimezone,
   getAllCountries,
@@ -351,4 +351,4 @@ const utils = {
   getCountryForTimezone,
 };
 
-export default utils;
+export default utilities;

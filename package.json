@@ -1,6 +1,6 @@
 {
   "name": "countries-and-timezones",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "description": "Minimalistic library to work with countries and timezones data.",
   "main": "./dist/index.js",
   "module": "./esm/index.js",
@@ -24,13 +24,12 @@
     "lint:ts": "xo --fix",
     "lint:json": "prettier --write \"**/*.json\"",
     "lint:md": "markdownlint \"**/*.md\" --fix --dot --ignore-path .gitignore && prettier --write \"**/*.md\"",
-    "lint": "yarn lint:ts && yarn lint:json && yarn lint:md",
-    "prepack": "yarn build",
+    "lint": "npm run lint:ts && npm run lint:json && npm run lint:md",
+    "prepack": "npm run build",
     "release": "release-it",
-    "prepare": "husky",
     "test:unit": "vitest",
     "test:types": "tsd --files types/index.test-d.ts",
-    "test": "yarn test:unit"
+    "test": "npm run test:unit"
   },
   "repository": {
     "type": "git",
@@ -61,22 +60,20 @@
   },
   "homepage": "https://github.com/manuelmhtr/countries-and-timezones#readme",
   "devDependencies": {
-    "@release-it/conventional-changelog": "^8.0.2",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@types/node": "^22.14.1",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "markdownlint-cli": "^0.42.0",
+    "@release-it/conventional-changelog": "^10.0.6",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@types/node": "^25.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "markdownlint-cli": "^0.48.0",
     "prettier": "^3.5.3",
-    "release-it": "^17.6.0",
-    "tsd": "^0.32.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.0",
+    "release-it": "^19.2.4",
+    "tsd": "^0.33.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.8",
     "vite-plugin-dts": "^4.5.3",
-    "vitest": "^3.1.1",
-    "xo": "^0.59.3"
+    "vitest": "^4.1.4",
+    "xo": "^2.0.2"
   },
-  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+  "packageManager": "npm@11.3.0"
 }
